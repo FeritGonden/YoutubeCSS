@@ -1,0 +1,514 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+header{
+    background-color: #f4f4f4;
+    color: #fff;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.headermain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    position: fixed;
+    top: 40px;
+    height: 100px;
+    background-color: #fff;
+}
+.headermain .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding-right: 20px;
+}
+
+
+.logo h2{
+    margin: 0;
+    font-size: 20px;
+    color: black;
+    padding-right: 20px;
+}
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    border: #444 1px solid;
+    border-radius: 20px;
+    align-items: center;
+    gap: 0;
+    width: fit-content;
+    margin: 0 auto;
+}
+.search-bar input[type="text"]{
+    padding: 8px 15px;
+    font-size: 16px;    
+    border: none;
+    border-radius: 20px 0 0 20px;
+    width: 550px;
+}
+.search-bar button{
+    padding: 8px 26px;
+    font-size: 16px;
+    border: #adacac 1px solid;
+    background-color: #f8f8f8;
+    color: #0f0f0f;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    height: 38px;
+}
+.search-bar button:hover{
+    background-color: #a9a8a8;
+}
+.center{
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+.voice-search{
+    margin-left: -150px;
+}
+.voice-search button{
+    padding: 8px ;
+    margin-right: 200px;
+    font-size: 16px;
+    border: none;
+    background-color: #e5e2e2;
+    color: #0f0f0f;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.voice-search button:hover{
+    background-color: #878787;
+}
+.create-video button, .profile button{
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    background-color: #e5e2e2;
+    color: #000000;
+    border-radius: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.menu-icon button{
+    padding: 8px 26px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: #f4f4f4;
+    color: #000000;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.create-video button:hover, .profile button:hover{
+    background-color: #878787;
+}
+ .menu-icon button:hover{
+    background-color: #3e3d3d;
+    opacity: 30%;
+    border-radius: 20px;
+}
+header .notifications button{
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f4f4f4;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+header .notifications button:hover{
+    background-color: #e5e2e2;
+}
+header .notifications{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+header .profile{
+    margin-left: 0px;
+    margin-right: 70px;
+}
+header .menu-icon{
+    margin-right: 10px;
+}
+
+header .logo{
+    margin-left: 10px;
+}
+header .center{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+header .end{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 10px;
+}
+header .start{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    
+    gap: 10px;
+}
+header .middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex: 1;
+}
+header .container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .container div button{
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+header .container div button:hover{
+    background-color: #444;
+}
+header .container div input[type="text"]{
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px 0 0 2px;
+    width: 300px;
+}
+header .container div button{
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+}
+header .container div button:hover{
+    background-color: #e60000;
+}
+.Videos{
+    padding: 120px 20px 10px 80px;
+    margin-top: -10px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.Videos .video-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    justify-items: center;
+    background-color: #f4f4f4;
+}
+
+.Videos .video-card{
+    position: relative;
+    background-color: transparent;
+    border-radius: 15px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 500px;
+    isolation: isolate;
+}
+.Videos .video-card-hover{
+    position: absolute;
+    inset: -5px;
+    background-color: #d7d7d7;
+    border-radius: 18px;
+    z-index: 0;
+    transform: scale(1);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+.Videos .video-card:hover .video-card-hover{
+    transform: scale(1.02);
+    opacity: 1;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+.Videos .video-card-content{
+    position: relative;
+    z-index: 1;
+}
+.Videos .video-thumbnail-container{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.Videos .video-card img{
+    width: 100%;
+    border-radius: 10px;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.dots{
+padding-left: 50px;
+margin-bottom: 20px;
+}
+.dots button{
+    text-decoration: none;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    float: right;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    right: -20px;
+    top: -5px;
+}
+.dots button:hover{
+    background-color: #dfdfdf;
+    border-radius: 100%;
+}
+
+.video-duration{
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.Videos .video-card .video-info{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+.Videos .video-card .video-info img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    flex-shrink: 0;
+}
+.Videos .video-card .video-text{
+    flex: 1;
+}
+.Videos .video-card .video-info h3{
+    margin: 0 0 5px 0;
+    font-size: 15px;
+}
+.Videos .video-card .video-info p{
+    margin: 0;
+    color: #666;
+    font-size: 15px;
+}
+.suggestionitems{
+    margin-top: 30px;
+    background-color: #f4f4f4;
+    padding: 0px 70px;
+    position: fixed;
+    padding-bottom: 10px;
+    top: 30px;
+    width: 90% !important;
+    overflow-x: auto;
+    scrollbar-width: none;
+    z-index: 8;
+}
+.suggestionitems .scrollbutton1{
+    position: absolute;
+    display: none;
+    left: 80px;
+    top: 60%;
+    transform: translateY(-50%);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1;
+
+
+}
+
+.suggestionitems .scrollbutton2{
+    position: absolute;
+    display: none;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+.suggestionitems .scroolcontainer{
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 0 20px;
+    scrollbar-width: none;
+}
+
+.suggestionitems .scroolcontainer .suggestion-item{
+    flex: 0 0 auto;
+    padding: 8px 16px 8px 16px;
+    background-color: #e5e2e2;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.suggestionitems .scroolcontainer .suggestion-item:hover{
+    background-color: #9d9d9d;
+}
+.suggestionitems .scroolcontainer .suggestion-item.active{
+    background-color: #000000;
+    color: #fff;
+}
+
+
+.sidebarsekli{
+    width: 70px;
+    border-right: 0px solid #f4f4f4;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 70px 0 20px 0;
+    z-index: 20;
+}
+.sidebarsekli .sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.sidebarsekli .sidebar .sidebar-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 10px;
+    color: #333;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+.sidebar-item:hover{
+    background-color: #9d9d9d;
+}
+.main-content{
+    margin-left: 90px;
+    padding: 20px;
+}
+.main-content .content-section{
+    margin-bottom: 40px;
+}
+.main-content .content-section h2{
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-bottom: 2px solid #ff0000;
+    padding-bottom: 10px;
+}
+.main-content .content-section .content-cards{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+.main-content .content-section .content-cards .content-card{
+    flex: 0 0 auto;
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.main-content .content-section .content-cards .content-card img{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.main-content .content-section .content-cards .content-card .card-info{
+    padding: 10px;
+}
+.main-content .content-section .content-cards .content-card .card-info h3{
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+.main-content .content-section .content-cards .content-card .card-info p{
+    margin: 0;
+    color: #666;
+    font-size: 12px;
+}
+footer{
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+footer p{
+    margin: 0;
+    font-size: 14px;
+}
+footer a{
+    color: #ff0000;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
